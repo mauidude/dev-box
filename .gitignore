@@ -7,9 +7,9 @@ Berksfile.lock
 .*.sw[a-z]
 *.un~
 /cookbooks
+.vagrant*
 
 # Bundler
 Gemfile.lock
 bin/*
 .bundle/*
-
