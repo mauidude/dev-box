@@ -1,0 +1,869 @@
+Bringing machine 'default' up with 'virtualbox' provider...
+[default] Importing base box 'precise64'...
+Progress: 40%Progress: 50%Progress: 60%Progress: 70%Progress: 80%Progress: 90%[default] Matching MAC address for NAT networking...
+[default] Setting the name of the VM...
+[default] Clearing any previously set forwarded ports...
+[Berkshelf] Updating Vagrant's berkshelf: '/Users/shane/.berkshelf/default/vagrant/berkshelf-20130727-83808-cjruyp-default'
+[Berkshelf] Installing rvm (0.9.1) from git: 'https://github.com/fnichol/chef-rvm' with branch: 'master' at ref: '7038fb8c518d0d7785767de215b1ae463f237973'
+[Berkshelf] Using git (2.5.2)
+[Berkshelf] Using curl (1.1.0)
+[Berkshelf] Using java (1.12.0)
+[Berkshelf] Using windows (1.10.0)
+[Berkshelf] Using chef_handler (1.1.4)
+[Berkshelf] Using chef_gem (0.1.0)
+[Berkshelf] Using dmg (1.1.0)
+[Berkshelf] Using build-essential (1.4.0)
+[Berkshelf] Using yum (2.3.0)
+[Berkshelf] Using runit (1.1.6)
+[default] Creating shared folders metadata...
+[default] Clearing any previously set network interfaces...
+[default] Preparing network interfaces based on configuration...
+[default] Forwarding ports...
+[default] -- 22 => 2222 (adapter 1)
+[default] Booting VM...
+[default] Waiting for VM to boot. This can take a few minutes.
+[default] VM booted and ready for use!
+[default] Mounting shared folders...
+[default] -- /vagrant
+[default] -- /tmp/vagrant-chef-1/chef-solo-1/cookbooks
+[default] Running provisioner: chef_solo...
+Generating chef JSON and uploading...
+Running chef-solo...
+stdin: is not a tty
+[2013-07-27T20:34:47+00:00] INFO: *** Chef 10.14.2 ***
+[2013-07-27T20:34:48+00:00] DEBUG: Building node object for precise64
+[2013-07-27T20:34:48+00:00] DEBUG: Extracting run list from JSON attributes provided on command line
+[2013-07-27T20:34:48+00:00] INFO: Setting the run_list to ["recipe[git]", "recipe[curl]", "recipe[rvm::system]", "recipe[rvm::vagrant]"] from JSON
+[2013-07-27T20:34:48+00:00] DEBUG: Applying attributes from json file
+[2013-07-27T20:34:48+00:00] DEBUG: Platform is ubuntu version 12.04
+[2013-07-27T20:34:48+00:00] INFO: Run List is [recipe[git], recipe[curl], recipe[rvm::system], recipe[rvm::vagrant]]
+[2013-07-27T20:34:48+00:00] INFO: Run List expands to [git, curl, rvm::system, rvm::vagrant]
+[2013-07-27T20:34:48+00:00] INFO: Starting Chef Run for precise64
+[2013-07-27T20:34:48+00:00] INFO: Running start handlers
+[2013-07-27T20:34:48+00:00] INFO: Start handlers complete.
+[2013-07-27T20:34:48+00:00] DEBUG: No chefignore file found at /tmp/vagrant-chef-1/chef-solo-1/cookbooks/chefignore no files will be ignored
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook runit's library file: /tmp/vagrant-chef-1/chef-solo-1/cookbooks/runit/libraries/provider_runit_service.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook runit's library file: /tmp/vagrant-chef-1/chef-solo-1/cookbooks/runit/libraries/default.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook runit's library file: /tmp/vagrant-chef-1/chef-solo-1/cookbooks/runit/libraries/resource_runit_service.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook windows's library file: /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/libraries/version.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook windows's library file: /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/libraries/feature_base.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook windows's library file: /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/libraries/registry_helper.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook windows's library file: /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/libraries/helper.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook windows's library file: /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/libraries/windows_privileged.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook java's library file: /tmp/vagrant-chef-1/chef-solo-1/cookbooks/java/libraries/helpers.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook rvm's library file: /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/libraries/gem_package_monkeypatch.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook rvm's library file: /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/libraries/chef_rvm_string_cache.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook rvm's library file: /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/libraries/chef_rvm_environment_helpers.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook rvm's library file: /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/libraries/rvm_rubygems_package.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook rvm's library file: /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/libraries/rvm_chef_user_environment.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook rvm's library file: /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/libraries/chef_rvm_recipe_helpers.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook rvm's library file: /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/libraries/chef_rvm_shell_helpers.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook rvm's library file: /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/libraries/chef_rvm_version_helpers.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook rvm's library file: /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/libraries/chef_rvm_string_helpers.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook rvm's library file: /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/libraries/rvm_shell_chef_wrapper.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook rvm's library file: /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/libraries/chef_rvm_set_helpers.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook rvm's library file: /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/libraries/chef_rvm_gemset_helpers.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook rvm's library file: /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/libraries/chef_rvm_ruby_helpers.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook chef_gem's library file: /tmp/vagrant-chef-1/chef-solo-1/cookbooks/chef_gem/libraries/chef_gem.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook windows's providers from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/providers/printer.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/providers/printer.rb into a provider named windows_printer defined in Chef::Provider::WindowsPrinter
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook windows's providers from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/providers/pagefile.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/providers/pagefile.rb into a provider named windows_pagefile defined in Chef::Provider::WindowsPagefile
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook windows's providers from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/providers/path.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/providers/path.rb into a provider named windows_path defined in Chef::Provider::WindowsPath
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook windows's providers from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/providers/zipfile.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/providers/zipfile.rb into a provider named windows_zipfile defined in Chef::Provider::WindowsZipfile
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook windows's providers from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/providers/shortcut.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/providers/shortcut.rb into a provider named windows_shortcut defined in Chef::Provider::WindowsShortcut
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook windows's providers from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/providers/task.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/providers/task.rb into a provider named windows_task defined in Chef::Provider::WindowsTask
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook windows's providers from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/providers/printer_port.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/providers/printer_port.rb into a provider named windows_printer_port defined in Chef::Provider::WindowsPrinterPort
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook windows's providers from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/providers/reboot.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/providers/reboot.rb into a provider named windows_reboot defined in Chef::Provider::WindowsReboot
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook windows's providers from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/providers/package.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/providers/package.rb into a provider named windows_package defined in Chef::Provider::WindowsPackage
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook windows's providers from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/providers/feature_servermanagercmd.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/providers/feature_servermanagercmd.rb into a provider named windows_feature_servermanagercmd defined in Chef::Provider::WindowsFeatureServermanagercmd
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook windows's providers from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/providers/feature_dism.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/providers/feature_dism.rb into a provider named windows_feature_dism defined in Chef::Provider::WindowsFeatureDism
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook windows's providers from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/providers/registry.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/providers/registry.rb into a provider named windows_registry defined in Chef::Provider::WindowsRegistry
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook windows's providers from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/providers/batch.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/providers/batch.rb into a provider named windows_batch defined in Chef::Provider::WindowsBatch
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook windows's providers from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/providers/auto_run.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/providers/auto_run.rb into a provider named windows_auto_run defined in Chef::Provider::WindowsAutoRun
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook java's providers from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/java/providers/ark.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/java/providers/ark.rb into a provider named java_ark defined in Chef::Provider::JavaArk
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook dmg's providers from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/dmg/providers/package.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/dmg/providers/package.rb into a provider named dmg_package defined in Chef::Provider::DmgPackage
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook chef_handler's providers from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/chef_handler/providers/default.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/chef_handler/providers/default.rb into a provider named chef_handler defined in Chef::Provider::ChefHandler
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook rvm's providers from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/gemset.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/gemset.rb into a provider named rvm_gemset defined in Chef::Provider::RvmGemset
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook rvm's providers from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/shell.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/shell.rb into a provider named rvm_shell defined in Chef::Provider::RvmShell
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook rvm's providers from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/global_gem.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/global_gem.rb into a provider named rvm_global_gem defined in Chef::Provider::RvmGlobalGem
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook rvm's providers from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/wrapper.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/wrapper.rb into a provider named rvm_wrapper defined in Chef::Provider::RvmWrapper
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook rvm's providers from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/ruby.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/ruby.rb into a provider named rvm_ruby defined in Chef::Provider::RvmRuby
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook rvm's providers from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/environment.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/environment.rb into a provider named rvm_environment defined in Chef::Provider::RvmEnvironment
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook rvm's providers from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/default_ruby.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/default_ruby.rb into a provider named rvm_default_ruby defined in Chef::Provider::RvmDefaultRuby
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook yum's providers from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/yum/providers/repository.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/yum/providers/repository.rb into a provider named yum_repository defined in Chef::Provider::YumRepository
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook yum's providers from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/yum/providers/key.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/yum/providers/key.rb into a provider named yum_key defined in Chef::Provider::YumKey
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook windows's resources from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/resources/reboot.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/resources/reboot.rb into a resource named windows_reboot defined in Chef::Resource::WindowsReboot
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook windows's resources from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/resources/path.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/resources/path.rb into a resource named windows_path defined in Chef::Resource::WindowsPath
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook windows's resources from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/resources/shortcut.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/resources/shortcut.rb into a resource named windows_shortcut defined in Chef::Resource::WindowsShortcut
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook windows's resources from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/resources/printer_port.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/resources/printer_port.rb into a resource named windows_printer_port defined in Chef::Resource::WindowsPrinterPort
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook windows's resources from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/resources/auto_run.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/resources/auto_run.rb into a resource named windows_auto_run defined in Chef::Resource::WindowsAutoRun
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook windows's resources from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/resources/pagefile.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/resources/pagefile.rb into a resource named windows_pagefile defined in Chef::Resource::WindowsPagefile
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook windows's resources from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/resources/task.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/resources/task.rb into a resource named windows_task defined in Chef::Resource::WindowsTask
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook windows's resources from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/resources/batch.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/resources/batch.rb into a resource named windows_batch defined in Chef::Resource::WindowsBatch
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook windows's resources from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/resources/registry.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/resources/registry.rb into a resource named windows_registry defined in Chef::Resource::WindowsRegistry
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook windows's resources from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/resources/package.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/resources/package.rb into a resource named windows_package defined in Chef::Resource::WindowsPackage
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook windows's resources from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/resources/printer.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/resources/printer.rb into a resource named windows_printer defined in Chef::Resource::WindowsPrinter
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook windows's resources from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/resources/zipfile.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/resources/zipfile.rb into a resource named windows_zipfile defined in Chef::Resource::WindowsZipfile
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook windows's resources from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/resources/feature.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/resources/feature.rb into a resource named windows_feature defined in Chef::Resource::WindowsFeature
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook java's resources from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/java/resources/ark.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/java/resources/ark.rb into a resource named java_ark defined in Chef::Resource::JavaArk
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook dmg's resources from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/dmg/resources/package.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/dmg/resources/package.rb into a resource named dmg_package defined in Chef::Resource::DmgPackage
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook chef_handler's resources from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/chef_handler/resources/default.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/chef_handler/resources/default.rb into a resource named chef_handler defined in Chef::Resource::ChefHandler
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook rvm's resources from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/resources/global_gem.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/resources/global_gem.rb into a resource named rvm_global_gem defined in Chef::Resource::RvmGlobalGem
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook rvm's resources from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/resources/default_ruby.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/resources/default_ruby.rb into a resource named rvm_default_ruby defined in Chef::Resource::RvmDefaultRuby
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook rvm's resources from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/resources/gemset.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/resources/gemset.rb into a resource named rvm_gemset defined in Chef::Resource::RvmGemset
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook rvm's resources from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/resources/environment.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/resources/environment.rb into a resource named rvm_environment defined in Chef::Resource::RvmEnvironment
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook rvm's resources from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/resources/wrapper.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/resources/wrapper.rb into a resource named rvm_wrapper defined in Chef::Resource::RvmWrapper
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook rvm's resources from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/resources/shell.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/resources/shell.rb into a resource named rvm_shell defined in Chef::Resource::RvmShell
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook rvm's resources from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/resources/ruby.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/resources/ruby.rb into a resource named rvm_ruby defined in Chef::Resource::RvmRuby
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook rvm's resources from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/resources/gem.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/resources/gem.rb into a resource named rvm_gem defined in Chef::Resource::RvmGem
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook yum's resources from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/yum/resources/key.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/yum/resources/key.rb into a resource named yum_key defined in Chef::Resource::YumKey
+[2013-07-27T20:34:48+00:00] DEBUG: Loading cookbook yum's resources from /tmp/vagrant-chef-1/chef-solo-1/cookbooks/yum/resources/repository.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loaded contents of /tmp/vagrant-chef-1/chef-solo-1/cookbooks/yum/resources/repository.rb into a resource named yum_repository defined in Chef::Resource::YumRepository
+[2013-07-27T20:34:48+00:00] DEBUG: Node precise64 loading cookbook runit's attribute file /tmp/vagrant-chef-1/chef-solo-1/cookbooks/runit/attributes/default.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Node precise64 loading cookbook windows's attribute file /tmp/vagrant-chef-1/chef-solo-1/cookbooks/windows/attributes/default.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Node precise64 loading cookbook java's attribute file /tmp/vagrant-chef-1/chef-solo-1/cookbooks/java/attributes/default.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Node precise64 loading cookbook git's attribute file /tmp/vagrant-chef-1/chef-solo-1/cookbooks/git/attributes/default.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Node precise64 loading cookbook dmg's attribute file /tmp/vagrant-chef-1/chef-solo-1/cookbooks/dmg/attributes/default.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Node precise64 loading cookbook build-essential's attribute file /tmp/vagrant-chef-1/chef-solo-1/cookbooks/build-essential/attributes/default.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Node precise64 loading cookbook chef_handler's attribute file /tmp/vagrant-chef-1/chef-solo-1/cookbooks/chef_handler/attributes/default.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Node precise64 loading cookbook rvm's attribute file /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/attributes/default.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Node precise64 loading cookbook rvm's attribute file /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/attributes/gem_package.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Node precise64 loading cookbook rvm's attribute file /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/attributes/vagrant.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Node precise64 loading cookbook yum's attribute file /tmp/vagrant-chef-1/chef-solo-1/cookbooks/yum/attributes/elrepo.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Node precise64 loading cookbook yum's attribute file /tmp/vagrant-chef-1/chef-solo-1/cookbooks/yum/attributes/remi.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Node precise64 loading cookbook yum's attribute file /tmp/vagrant-chef-1/chef-solo-1/cookbooks/yum/attributes/default.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Node precise64 loading cookbook yum's attribute file /tmp/vagrant-chef-1/chef-solo-1/cookbooks/yum/attributes/epel.rb
+[2013-07-27T20:34:48+00:00] DEBUG: Loading Recipe git via include_recipe
+[2013-07-27T20:34:48+00:00] DEBUG: Found recipe default in cookbook git
+[2013-07-27T20:34:48+00:00] DEBUG: Loading Recipe curl via include_recipe
+[2013-07-27T20:34:48+00:00] DEBUG: Found recipe default in cookbook curl
+[2013-07-27T20:34:48+00:00] DEBUG: Loading Recipe rvm::system via include_recipe
+[2013-07-27T20:34:48+00:00] DEBUG: Found recipe system in cookbook rvm
+[2013-07-27T20:34:48+00:00] DEBUG: Loading Recipe rvm::system_install via include_recipe
+[2013-07-27T20:34:48+00:00] DEBUG: Found recipe system_install in cookbook rvm
+[2013-07-27T20:34:48+00:00] DEBUG: Loading Recipe rvm via include_recipe
+[2013-07-27T20:34:48+00:00] DEBUG: Found recipe default in cookbook rvm
+[2013-07-27T20:34:48+00:00] INFO: Processing chef_gem[rvm] action install (rvm::default line 21)
+[2013-07-27T20:34:48+00:00] DEBUG: chef_gem[rvm] using gem from running ruby environment
+[2013-07-27T20:34:48+00:00] DEBUG: chef_gem[rvm] no installed version found for rvm (>= 1.11.3.6)
+[2013-07-27T20:35:06+00:00] DEBUG: Setting package[curl] to the state of the prior package[curl]
+[2013-07-27T20:35:06+00:00] DEBUG: Loading Recipe rvm::vagrant via include_recipe
+[2013-07-27T20:35:06+00:00] DEBUG: Found recipe vagrant in cookbook rvm
+[2013-07-27T20:35:06+00:00] DEBUG: Setting group[rvm] to the state of the prior group[rvm]
+[2013-07-27T20:35:06+00:00] DEBUG: Loading from cookbook_path: /tmp/vagrant-chef-1/chef-solo-1/cookbooks
+[2013-07-27T20:35:06+00:00] DEBUG: Converging node precise64
+[2013-07-27T20:35:06+00:00] INFO: Processing package[git] action install (git::default line 24)
+[2013-07-27T20:35:06+00:00] DEBUG: package[git] checking package status for git
+[2013-07-27T20:35:09+00:00] DEBUG: package[git] current version is nil
+[2013-07-27T20:35:09+00:00] DEBUG: package[git] candidate version is 1:1.7.9.5-1
+[2013-07-27T20:35:09+00:00] DEBUG: Executing apt-get -q -y install git=1:1.7.9.5-1
+[2013-07-27T20:35:52+00:00] DEBUG: ---- Begin output of apt-get -q -y install git=1:1.7.9.5-1 ----
+[2013-07-27T20:35:52+00:00] DEBUG: STDOUT: Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  git-man liberror-perl patch
+Suggested packages:
+  git-daemon-run git-daemon-sysvinit git-doc git-el git-arch git-cvs git-svn
+  git-email git-gui gitk gitweb diffutils-doc
+The following NEW packages will be installed:
+  git git-man liberror-perl patch
+0 upgraded, 4 newly installed, 0 to remove and 66 not upgraded.
+Need to get 6,821 kB of archives.
+After this operation, 15.5 MB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ precise/main liberror-perl all 0.17-1 [23.8 kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu/ precise/main git-man all 1:1.7.9.5-1 [630 kB]
+Get:3 http://us.archive.ubuntu.com/ubuntu/ precise/main git amd64 1:1.7.9.5-1 [6,087 kB]
+Get:4 http://us.archive.ubuntu.com/ubuntu/ precise/main patch amd64 2.6.1-3 [80.2 kB]
+Fetched 6,821 kB in 39s (173 kB/s)
+Selecting previously unselected package liberror-perl.
+(Reading database ... 51095 files and directories currently installed.)
+Unpacking liberror-perl (from .../liberror-perl_0.17-1_all.deb) ...
+Selecting previously unselected package git-man.
+Unpacking git-man (from .../git-man_1%3a1.7.9.5-1_all.deb) ...
+Selecting previously unselected package git.
+Unpacking git (from .../git_1%3a1.7.9.5-1_amd64.deb) ...
+Selecting previously unselected package patch.
+Unpacking patch (from .../patch_2.6.1-3_amd64.deb) ...
+Processing triggers for man-db ...
+Setting up liberror-perl (0.17-1) ...
+Setting up git-man (1:1.7.9.5-1) ...
+Setting up git (1:1.7.9.5-1) ...
+Setting up patch (2.6.1-3) ...
+[2013-07-27T20:35:52+00:00] DEBUG: STDERR: 
+[2013-07-27T20:35:52+00:00] DEBUG: ---- End output of apt-get -q -y install git=1:1.7.9.5-1 ----
+[2013-07-27T20:35:52+00:00] DEBUG: Ran apt-get -q -y install git=1:1.7.9.5-1 returned 0
+[2013-07-27T20:35:52+00:00] INFO: Processing package[curl] action upgrade (curl::default line 20)
+[2013-07-27T20:35:52+00:00] DEBUG: package[curl] checking package status for curl
+[2013-07-27T20:35:52+00:00] DEBUG: package[curl] current version is nil
+[2013-07-27T20:35:52+00:00] DEBUG: package[curl] candidate version is 7.22.0-3ubuntu4
+[2013-07-27T20:35:52+00:00] DEBUG: Executing apt-get -q -y install curl=7.22.0-3ubuntu4
+[2013-07-27T20:35:55+00:00] DEBUG: ---- Begin output of apt-get -q -y install curl=7.22.0-3ubuntu4 ----
+[2013-07-27T20:35:55+00:00] DEBUG: STDOUT: Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  libcurl3
+The following NEW packages will be installed:
+  curl libcurl3
+0 upgraded, 2 newly installed, 0 to remove and 66 not upgraded.
+Need to get 374 kB of archives.
+After this operation, 910 kB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ precise/main libcurl3 amd64 7.22.0-3ubuntu4 [237 kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu/ precise/main curl amd64 7.22.0-3ubuntu4 [138 kB]
+Fetched 374 kB in 1s (243 kB/s)
+Selecting previously unselected package libcurl3.
+(Reading database ... 51753 files and directories currently installed.)
+Unpacking libcurl3 (from .../libcurl3_7.22.0-3ubuntu4_amd64.deb) ...
+Selecting previously unselected package curl.
+Unpacking curl (from .../curl_7.22.0-3ubuntu4_amd64.deb) ...
+Processing triggers for man-db ...
+Setting up libcurl3 (7.22.0-3ubuntu4) ...
+Setting up curl (7.22.0-3ubuntu4) ...
+Processing triggers for libc-bin ...
+ldconfig deferred processing now taking place
+[2013-07-27T20:35:55+00:00] DEBUG: STDERR: 
+[2013-07-27T20:35:55+00:00] DEBUG: ---- End output of apt-get -q -y install curl=7.22.0-3ubuntu4 ----
+[2013-07-27T20:35:55+00:00] DEBUG: Ran apt-get -q -y install curl=7.22.0-3ubuntu4 returned 0
+[2013-07-27T20:35:55+00:00] INFO: package[curl] upgraded from uninstalled to 7.22.0-3ubuntu4
+[2013-07-27T20:35:55+00:00] INFO: Processing chef_gem[rvm] action install (rvm::default line 21)
+[2013-07-27T20:35:55+00:00] DEBUG: chef_gem[rvm] using gem from running ruby environment
+[2013-07-27T20:35:55+00:00] DEBUG: chef_gem[rvm] found installed gem rvm version 1.11.3.8 matching rvm (>= 1.11.3.6)
+[2013-07-27T20:35:55+00:00] DEBUG: chef_gem[rvm] is already installed - nothing to do
+[2013-07-27T20:35:55+00:00] INFO: Processing package[sed] action install (rvm::system_install line 45)
+[2013-07-27T20:35:55+00:00] DEBUG: package[sed] checking package status for sed
+[2013-07-27T20:35:56+00:00] DEBUG: package[sed] current version is 4.2.1-9
+[2013-07-27T20:35:56+00:00] DEBUG: package[sed] candidate version is 4.2.1-9
+[2013-07-27T20:35:56+00:00] DEBUG: package[sed] is already installed - nothing to do
+[2013-07-27T20:35:56+00:00] INFO: Processing package[grep] action install (rvm::system_install line 45)
+[2013-07-27T20:35:56+00:00] DEBUG: package[grep] checking package status for grep
+[2013-07-27T20:35:56+00:00] DEBUG: package[grep] current version is 2.10-1
+[2013-07-27T20:35:56+00:00] DEBUG: package[grep] candidate version is 2.10-1
+[2013-07-27T20:35:56+00:00] DEBUG: package[grep] is already installed - nothing to do
+[2013-07-27T20:35:56+00:00] INFO: Processing package[tar] action install (rvm::system_install line 45)
+[2013-07-27T20:35:56+00:00] DEBUG: package[tar] checking package status for tar
+[2013-07-27T20:35:56+00:00] DEBUG: package[tar] current version is 1.26-4ubuntu1
+[2013-07-27T20:35:56+00:00] DEBUG: package[tar] candidate version is 1.26-4ubuntu1
+[2013-07-27T20:35:56+00:00] DEBUG: package[tar] is already installed - nothing to do
+[2013-07-27T20:35:56+00:00] INFO: Processing package[gzip] action install (rvm::system_install line 45)
+[2013-07-27T20:35:56+00:00] DEBUG: package[gzip] checking package status for gzip
+[2013-07-27T20:35:56+00:00] DEBUG: package[gzip] current version is 1.4-1ubuntu2
+[2013-07-27T20:35:56+00:00] DEBUG: package[gzip] candidate version is 1.4-1ubuntu2
+[2013-07-27T20:35:56+00:00] DEBUG: package[gzip] is already installed - nothing to do
+[2013-07-27T20:35:56+00:00] INFO: Processing package[bzip2] action install (rvm::system_install line 45)
+[2013-07-27T20:35:56+00:00] DEBUG: package[bzip2] checking package status for bzip2
+[2013-07-27T20:35:56+00:00] DEBUG: package[bzip2] current version is 1.0.6-1
+[2013-07-27T20:35:56+00:00] DEBUG: package[bzip2] candidate version is 1.0.6-1
+[2013-07-27T20:35:56+00:00] DEBUG: package[bzip2] is already installed - nothing to do
+[2013-07-27T20:35:56+00:00] INFO: Processing package[bash] action install (rvm::system_install line 45)
+[2013-07-27T20:35:56+00:00] DEBUG: package[bash] checking package status for bash
+[2013-07-27T20:35:56+00:00] DEBUG: package[bash] current version is 4.2-2ubuntu2
+[2013-07-27T20:35:56+00:00] DEBUG: package[bash] candidate version is 4.2-2ubuntu2
+[2013-07-27T20:35:56+00:00] DEBUG: package[bash] is already installed - nothing to do
+[2013-07-27T20:35:56+00:00] INFO: Processing package[curl] action install (rvm::system_install line 45)
+[2013-07-27T20:35:56+00:00] DEBUG: package[curl] checking package status for curl
+[2013-07-27T20:35:56+00:00] DEBUG: package[curl] current version is 7.22.0-3ubuntu4
+[2013-07-27T20:35:56+00:00] DEBUG: package[curl] candidate version is 7.22.0-3ubuntu4
+[2013-07-27T20:35:56+00:00] DEBUG: package[curl] is already installed - nothing to do
+[2013-07-27T20:35:56+00:00] INFO: Processing package[git-core] action install (rvm::system_install line 45)
+[2013-07-27T20:35:56+00:00] DEBUG: package[git-core] checking package status for git-core
+[2013-07-27T20:35:56+00:00] DEBUG: package[git-core] current version is nil
+[2013-07-27T20:35:56+00:00] DEBUG: package[git-core] candidate version is 1:1.7.9.5-1
+[2013-07-27T20:35:56+00:00] DEBUG: Executing apt-get -q -y install git-core=1:1.7.9.5-1
+[2013-07-27T20:35:57+00:00] DEBUG: ---- Begin output of apt-get -q -y install git-core=1:1.7.9.5-1 ----
+[2013-07-27T20:35:57+00:00] DEBUG: STDOUT: Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  git-core
+0 upgraded, 1 newly installed, 0 to remove and 66 not upgraded.
+Need to get 1,384 B of archives.
+After this operation, 21.5 kB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ precise/main git-core all 1:1.7.9.5-1 [1,384 B]
+Fetched 1,384 B in 0s (4,845 B/s)
+Selecting previously unselected package git-core.
+(Reading database ... 51785 files and directories currently installed.)
+Unpacking git-core (from .../git-core_1%3a1.7.9.5-1_all.deb) ...
+Setting up git-core (1:1.7.9.5-1) ...
+[2013-07-27T20:35:57+00:00] DEBUG: STDERR: 
+[2013-07-27T20:35:57+00:00] DEBUG: ---- End output of apt-get -q -y install git-core=1:1.7.9.5-1 ----
+[2013-07-27T20:35:57+00:00] DEBUG: Ran apt-get -q -y install git-core=1:1.7.9.5-1 returned 0
+[2013-07-27T20:35:57+00:00] INFO: Processing template[/etc/rvmrc] action create (rvm::system_install line 144)
+[2013-07-27T20:35:57+00:00] DEBUG: Current content's checksum:  
+[2013-07-27T20:35:57+00:00] DEBUG: Rendered content's checksum: 9484b65e2a38647d6f6613b62ad7b0744127e5bbab75dc7c10c958b995418e15
+[2013-07-27T20:35:57+00:00] INFO: template[/etc/rvmrc] updated content
+[2013-07-27T20:35:57+00:00] INFO: template[/etc/rvmrc] owner changed to 0
+[2013-07-27T20:35:57+00:00] INFO: template[/etc/rvmrc] mode changed to 644
+[2013-07-27T20:35:57+00:00] INFO: Processing log[Performing RVM install with [curl -L https://get.rvm.io | bash  -s -- --branch stable --version head] (as root)] action write (rvm::system_install line 76)
+[2013-07-27T20:35:57+00:00] INFO: Performing RVM install with [curl -L https://get.rvm.io | bash  -s -- --branch stable --version head] (as root)
+[2013-07-27T20:35:57+00:00] INFO: Processing execute[install system-wide RVM] action run (rvm::system_install line 78)
+[2013-07-27T20:36:08+00:00] INFO: execute[install system-wide RVM] ran successfully
+[2013-07-27T20:36:08+00:00] INFO: Processing execute[upgrade system-wide RVM to none] action run (rvm::system_install line 114)
+[2013-07-27T20:36:08+00:00] DEBUG: Skipping execute[upgrade system-wide RVM to none] due to not_if ruby block
+[2013-07-27T20:36:08+00:00] INFO: Processing rvm_ruby[2.0.0-p195] action install (rvm::system line 176)
+[2013-07-27T20:36:08+00:00] DEBUG: Fetching canonical RVM string for: 2.0.0-p195 (system)
+[2013-07-27T20:36:08+00:00] DEBUG: Canonical RVM string is: 2.0.0-p195 => ruby-2.0.0-p195 (system)
+[2013-07-27T20:36:08+00:00] DEBUG: RVM::Shell::ChefWrapper subprocess executing with environment of: [{}].
+[2013-07-27T20:36:08+00:00] DEBUG: RVM::Shell::ChefWrapper silently executing: [source '/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/rvm-1.11.3.8/lib/rvm/shell/shell_wrapper.sh'; __rvm_show_command_epilog]
+[2013-07-27T20:36:08+00:00] DEBUG: RVM::Shell::ChefWrapper executing: [rvm 'list' 'strings'; __rvm_show_command_epilog]
+[2013-07-27T20:36:08+00:00] INFO: Processing package[build-essential] action install (/tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/ruby.rb line 172)
+[2013-07-27T20:36:08+00:00] DEBUG: package[build-essential] checking package status for build-essential
+[2013-07-27T20:36:08+00:00] DEBUG: package[build-essential] current version is nil
+[2013-07-27T20:36:08+00:00] DEBUG: package[build-essential] candidate version is 11.5ubuntu2.1
+[2013-07-27T20:36:08+00:00] DEBUG: Executing apt-get -q -y install build-essential=11.5ubuntu2.1
+[2013-07-27T20:36:30+00:00] DEBUG: ---- Begin output of apt-get -q -y install build-essential=11.5ubuntu2.1 ----
+[2013-07-27T20:36:30+00:00] DEBUG: STDOUT: Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  dpkg-dev fakeroot g++ g++-4.6 libalgorithm-diff-perl
+  libalgorithm-diff-xs-perl libalgorithm-merge-perl libdpkg-perl
+  libstdc++6-4.6-dev make
+Suggested packages:
+  debian-keyring g++-multilib g++-4.6-multilib gcc-4.6-doc libstdc++6-4.6-dbg
+  libstdc++6-4.6-doc make-doc
+The following NEW packages will be installed:
+  build-essential dpkg-dev fakeroot g++ g++-4.6 libalgorithm-diff-perl
+  libalgorithm-diff-xs-perl libalgorithm-merge-perl libdpkg-perl
+  libstdc++6-4.6-dev make
+0 upgraded, 11 newly installed, 0 to remove and 66 not upgraded.
+Need to get 9,551 kB of archives.
+After this operation, 28.9 MB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ precise/main libstdc++6-4.6-dev amd64 4.6.3-1ubuntu5 [1,660 kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu/ precise/main g++-4.6 amd64 4.6.3-1ubuntu5 [6,954 kB]
+Get:3 http://us.archive.ubuntu.com/ubuntu/ precise/main g++ amd64 4:4.6.3-1ubuntu5 [1,442 B]
+Get:4 http://us.archive.ubuntu.com/ubuntu/ precise/main make amd64 3.81-8.1ubuntu1 [118 kB]
+Get:5 http://us.archive.ubuntu.com/ubuntu/ precise/main libdpkg-perl all 1.16.1.2ubuntu7 [181 kB]
+Get:6 http://us.archive.ubuntu.com/ubuntu/ precise/main dpkg-dev all 1.16.1.2ubuntu7 [468 kB]
+Get:7 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main build-essential amd64 11.5ubuntu2.1 [5,816 B]
+Get:8 http://us.archive.ubuntu.com/ubuntu/ precise/main fakeroot amd64 1.18.2-1 [87.2 kB]
+Get:9 http://us.archive.ubuntu.com/ubuntu/ precise/main libalgorithm-diff-perl all 1.19.02-2 [50.7 kB]
+Get:10 http://us.archive.ubuntu.com/ubuntu/ precise/main libalgorithm-diff-xs-perl amd64 0.04-2build2 [12.4 kB]
+Get:11 http://us.archive.ubuntu.com/ubuntu/ precise/main libalgorithm-merge-perl all 0.08-2 [12.7 kB]
+Fetched 9,551 kB in 18s (512 kB/s)
+Selecting previously unselected package libstdc++6-4.6-dev.
+(Reading database ... 51786 files and directories currently installed.)
+Unpacking libstdc++6-4.6-dev (from .../libstdc++6-4.6-dev_4.6.3-1ubuntu5_amd64.deb) ...
+Selecting previously unselected package g++-4.6.
+Unpacking g++-4.6 (from .../g++-4.6_4.6.3-1ubuntu5_amd64.deb) ...
+Selecting previously unselected package g++.
+Unpacking g++ (from .../g++_4%3a4.6.3-1ubuntu5_amd64.deb) ...
+Selecting previously unselected package make.
+Unpacking make (from .../make_3.81-8.1ubuntu1_amd64.deb) ...
+Selecting previously unselected package libdpkg-perl.
+Unpacking libdpkg-perl (from .../libdpkg-perl_1.16.1.2ubuntu7_all.deb) ...
+Selecting previously unselected package dpkg-dev.
+Unpacking dpkg-dev (from .../dpkg-dev_1.16.1.2ubuntu7_all.deb) ...
+Selecting previously unselected package build-essential.
+Unpacking build-essential (from .../build-essential_11.5ubuntu2.1_amd64.deb) ...
+Selecting previously unselected package fakeroot.
+Unpacking fakeroot (from .../fakeroot_1.18.2-1_amd64.deb) ...
+Selecting previously unselected package libalgorithm-diff-perl.
+Unpacking libalgorithm-diff-perl (from .../libalgorithm-diff-perl_1.19.02-2_all.deb) ...
+Selecting previously unselected package libalgorithm-diff-xs-perl.
+Unpacking libalgorithm-diff-xs-perl (from .../libalgorithm-diff-xs-perl_0.04-2build2_amd64.deb) ...
+Selecting previously unselected package libalgorithm-merge-perl.
+Unpacking libalgorithm-merge-perl (from .../libalgorithm-merge-perl_0.08-2_all.deb) ...
+Processing triggers for man-db ...
+Setting up make (3.81-8.1ubuntu1) ...
+Setting up libdpkg-perl (1.16.1.2ubuntu7) ...
+Setting up dpkg-dev (1.16.1.2ubuntu7) ...
+Setting up fakeroot (1.18.2-1) ...
+update-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode.
+Setting up libalgorithm-diff-perl (1.19.02-2) ...
+Setting up libalgorithm-diff-xs-perl (0.04-2build2) ...
+Setting up libalgorithm-merge-perl (0.08-2) ...
+Setting up libstdc++6-4.6-dev (4.6.3-1ubuntu5) ...
+Setting up g++-4.6 (4.6.3-1ubuntu5) ...
+Setting up g++ (4:4.6.3-1ubuntu5) ...
+update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode.
+Setting up build-essential (11.5ubuntu2.1) ...
+[2013-07-27T20:36:30+00:00] DEBUG: STDERR: 
+[2013-07-27T20:36:30+00:00] DEBUG: ---- End output of apt-get -q -y install build-essential=11.5ubuntu2.1 ----
+[2013-07-27T20:36:30+00:00] DEBUG: Ran apt-get -q -y install build-essential=11.5ubuntu2.1 returned 0
+[2013-07-27T20:36:30+00:00] INFO: Processing package[openssl] action install (/tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/ruby.rb line 172)
+[2013-07-27T20:36:30+00:00] DEBUG: package[openssl] checking package status for openssl
+[2013-07-27T20:36:30+00:00] DEBUG: package[openssl] current version is 1.0.1-4ubuntu3
+[2013-07-27T20:36:30+00:00] DEBUG: package[openssl] candidate version is 1.0.1-4ubuntu5.5
+[2013-07-27T20:36:30+00:00] DEBUG: package[openssl] is already installed - nothing to do
+[2013-07-27T20:36:30+00:00] INFO: Processing package[libreadline6] action install (/tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/ruby.rb line 172)
+[2013-07-27T20:36:30+00:00] DEBUG: package[libreadline6] checking package status for libreadline6
+[2013-07-27T20:36:30+00:00] DEBUG: package[libreadline6] current version is 6.2-8
+[2013-07-27T20:36:30+00:00] DEBUG: package[libreadline6] candidate version is 6.2-8
+[2013-07-27T20:36:30+00:00] DEBUG: package[libreadline6] is already installed - nothing to do
+[2013-07-27T20:36:30+00:00] INFO: Processing package[libreadline6-dev] action install (/tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/ruby.rb line 172)
+[2013-07-27T20:36:30+00:00] DEBUG: package[libreadline6-dev] checking package status for libreadline6-dev
+[2013-07-27T20:36:30+00:00] DEBUG: package[libreadline6-dev] current version is 6.2-8
+[2013-07-27T20:36:30+00:00] DEBUG: package[libreadline6-dev] candidate version is 6.2-8
+[2013-07-27T20:36:30+00:00] DEBUG: package[libreadline6-dev] is already installed - nothing to do
+[2013-07-27T20:36:30+00:00] INFO: Processing package[zlib1g] action install (/tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/ruby.rb line 172)
+[2013-07-27T20:36:30+00:00] DEBUG: package[zlib1g] checking package status for zlib1g
+[2013-07-27T20:36:30+00:00] DEBUG: package[zlib1g] current version is 1:1.2.3.4.dfsg-3ubuntu4
+[2013-07-27T20:36:30+00:00] DEBUG: package[zlib1g] candidate version is 1:1.2.3.4.dfsg-3ubuntu4
+[2013-07-27T20:36:30+00:00] DEBUG: package[zlib1g] is already installed - nothing to do
+[2013-07-27T20:36:30+00:00] INFO: Processing package[zlib1g-dev] action install (/tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/ruby.rb line 172)
+[2013-07-27T20:36:30+00:00] DEBUG: package[zlib1g-dev] checking package status for zlib1g-dev
+[2013-07-27T20:36:30+00:00] DEBUG: package[zlib1g-dev] current version is 1:1.2.3.4.dfsg-3ubuntu4
+[2013-07-27T20:36:30+00:00] DEBUG: package[zlib1g-dev] candidate version is 1:1.2.3.4.dfsg-3ubuntu4
+[2013-07-27T20:36:30+00:00] DEBUG: package[zlib1g-dev] is already installed - nothing to do
+[2013-07-27T20:36:30+00:00] INFO: Processing package[libssl-dev] action install (/tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/ruby.rb line 172)
+[2013-07-27T20:36:30+00:00] DEBUG: package[libssl-dev] checking package status for libssl-dev
+[2013-07-27T20:36:30+00:00] DEBUG: package[libssl-dev] current version is 1.0.1-4ubuntu5.5
+[2013-07-27T20:36:30+00:00] DEBUG: package[libssl-dev] candidate version is 1.0.1-4ubuntu5.5
+[2013-07-27T20:36:30+00:00] DEBUG: package[libssl-dev] is already installed - nothing to do
+[2013-07-27T20:36:30+00:00] INFO: Processing package[libyaml-dev] action install (/tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/ruby.rb line 172)
+[2013-07-27T20:36:30+00:00] DEBUG: package[libyaml-dev] checking package status for libyaml-dev
+[2013-07-27T20:36:30+00:00] DEBUG: package[libyaml-dev] current version is nil
+[2013-07-27T20:36:30+00:00] DEBUG: package[libyaml-dev] candidate version is 0.1.4-2
+[2013-07-27T20:36:30+00:00] DEBUG: Executing apt-get -q -y install libyaml-dev=0.1.4-2
+[2013-07-27T20:36:32+00:00] DEBUG: ---- Begin output of apt-get -q -y install libyaml-dev=0.1.4-2 ----
+[2013-07-27T20:36:32+00:00] DEBUG: STDOUT: Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  libyaml-0-2
+The following NEW packages will be installed:
+  libyaml-0-2 libyaml-dev
+0 upgraded, 2 newly installed, 0 to remove and 66 not upgraded.
+Need to get 127 kB of archives.
+After this operation, 446 kB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ precise/main libyaml-0-2 amd64 0.1.4-2 [56.9 kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu/ precise/main libyaml-dev amd64 0.1.4-2 [69.9 kB]
+Fetched 127 kB in 0s (154 kB/s)
+Selecting previously unselected package libyaml-0-2.
+(Reading database ... 52916 files and directories currently installed.)
+Unpacking libyaml-0-2 (from .../libyaml-0-2_0.1.4-2_amd64.deb) ...
+Selecting previously unselected package libyaml-dev.
+Unpacking libyaml-dev (from .../libyaml-dev_0.1.4-2_amd64.deb) ...
+Setting up libyaml-0-2 (0.1.4-2) ...
+Setting up libyaml-dev (0.1.4-2) ...
+Processing triggers for libc-bin ...
+ldconfig deferred processing now taking place
+[2013-07-27T20:36:32+00:00] DEBUG: STDERR: 
+[2013-07-27T20:36:32+00:00] DEBUG: ---- End output of apt-get -q -y install libyaml-dev=0.1.4-2 ----
+[2013-07-27T20:36:32+00:00] DEBUG: Ran apt-get -q -y install libyaml-dev=0.1.4-2 returned 0
+[2013-07-27T20:36:32+00:00] INFO: Processing package[libsqlite3-dev] action install (/tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/ruby.rb line 172)
+[2013-07-27T20:36:32+00:00] DEBUG: package[libsqlite3-dev] checking package status for libsqlite3-dev
+[2013-07-27T20:36:32+00:00] DEBUG: package[libsqlite3-dev] current version is nil
+[2013-07-27T20:36:32+00:00] DEBUG: package[libsqlite3-dev] candidate version is 3.7.9-2ubuntu1.1
+[2013-07-27T20:36:32+00:00] DEBUG: Executing apt-get -q -y install libsqlite3-dev=3.7.9-2ubuntu1.1
+[2013-07-27T20:36:35+00:00] DEBUG: ---- Begin output of apt-get -q -y install libsqlite3-dev=3.7.9-2ubuntu1.1 ----
+[2013-07-27T20:36:35+00:00] DEBUG: STDOUT: Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  libsqlite3-0
+Suggested packages:
+  sqlite3-doc
+The following NEW packages will be installed:
+  libsqlite3-dev
+The following packages will be upgraded:
+  libsqlite3-0
+1 upgraded, 1 newly installed, 0 to remove and 65 not upgraded.
+Need to get 807 kB of archives.
+After this operation, 1,340 kB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libsqlite3-0 amd64 3.7.9-2ubuntu1.1 [349 kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libsqlite3-dev amd64 3.7.9-2ubuntu1.1 [459 kB]
+Fetched 807 kB in 1s (416 kB/s)
+(Reading database ... 52930 files and directories currently installed.)
+Preparing to replace libsqlite3-0 3.7.9-2ubuntu1 (using .../libsqlite3-0_3.7.9-2ubuntu1.1_amd64.deb) ...
+Unpacking replacement libsqlite3-0 ...
+Selecting previously unselected package libsqlite3-dev.
+Unpacking libsqlite3-dev (from .../libsqlite3-dev_3.7.9-2ubuntu1.1_amd64.deb) ...
+Setting up libsqlite3-0 (3.7.9-2ubuntu1.1) ...
+Setting up libsqlite3-dev (3.7.9-2ubuntu1.1) ...
+Processing triggers for libc-bin ...
+ldconfig deferred processing now taking place
+[2013-07-27T20:36:35+00:00] DEBUG: STDERR: 
+[2013-07-27T20:36:35+00:00] DEBUG: ---- End output of apt-get -q -y install libsqlite3-dev=3.7.9-2ubuntu1.1 ----
+[2013-07-27T20:36:35+00:00] DEBUG: Ran apt-get -q -y install libsqlite3-dev=3.7.9-2ubuntu1.1 returned 0
+[2013-07-27T20:36:35+00:00] INFO: Processing package[sqlite3] action install (/tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/ruby.rb line 172)
+[2013-07-27T20:36:35+00:00] DEBUG: package[sqlite3] checking package status for sqlite3
+[2013-07-27T20:36:35+00:00] DEBUG: package[sqlite3] current version is nil
+[2013-07-27T20:36:35+00:00] DEBUG: package[sqlite3] candidate version is 3.7.9-2ubuntu1.1
+[2013-07-27T20:36:35+00:00] DEBUG: Executing apt-get -q -y install sqlite3=3.7.9-2ubuntu1.1
+[2013-07-27T20:36:37+00:00] DEBUG: ---- Begin output of apt-get -q -y install sqlite3=3.7.9-2ubuntu1.1 ----
+[2013-07-27T20:36:37+00:00] DEBUG: STDOUT: Reading package lists...
+Building dependency tree...
+Reading state information...
+Suggested packages:
+  sqlite3-doc
+The following NEW packages will be installed:
+  sqlite3
+0 upgraded, 1 newly installed, 0 to remove and 65 not upgraded.
+Need to get 26.8 kB of archives.
+After this operation, 174 kB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main sqlite3 amd64 3.7.9-2ubuntu1.1 [26.8 kB]
+Fetched 26.8 kB in 0s (48.4 kB/s)
+Selecting previously unselected package sqlite3.
+(Reading database ... 52939 files and directories currently installed.)
+Unpacking sqlite3 (from .../sqlite3_3.7.9-2ubuntu1.1_amd64.deb) ...
+Processing triggers for man-db ...
+Setting up sqlite3 (3.7.9-2ubuntu1.1) ...
+[2013-07-27T20:36:37+00:00] DEBUG: STDERR: 
+[2013-07-27T20:36:37+00:00] DEBUG: ---- End output of apt-get -q -y install sqlite3=3.7.9-2ubuntu1.1 ----
+[2013-07-27T20:36:37+00:00] DEBUG: Ran apt-get -q -y install sqlite3=3.7.9-2ubuntu1.1 returned 0
+[2013-07-27T20:36:37+00:00] INFO: Processing package[libxml2-dev] action install (/tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/ruby.rb line 172)
+[2013-07-27T20:36:37+00:00] DEBUG: package[libxml2-dev] checking package status for libxml2-dev
+[2013-07-27T20:36:37+00:00] DEBUG: package[libxml2-dev] current version is nil
+[2013-07-27T20:36:37+00:00] DEBUG: package[libxml2-dev] candidate version is 2.7.8.dfsg-5.1ubuntu4.1
+[2013-07-27T20:36:37+00:00] DEBUG: Executing apt-get -q -y install libxml2-dev=2.7.8.dfsg-5.1ubuntu4.1
+[2013-07-27T20:36:39+00:00] DEBUG: ---- Begin output of apt-get -q -y install libxml2-dev=2.7.8.dfsg-5.1ubuntu4.1 ----
+[2013-07-27T20:36:39+00:00] DEBUG: STDOUT: Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  libxml2
+The following NEW packages will be installed:
+  libxml2-dev
+The following packages will be upgraded:
+  libxml2
+1 upgraded, 1 newly installed, 0 to remove and 64 not upgraded.
+Need to get 1,477 kB of archives.
+After this operation, 2,754 kB of additional disk space will be used.
+Err http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxml2 amd64 2.7.8.dfsg-5.1ubuntu4.1
+  404  Not Found [IP: 91.189.91.13 80]
+Err http://security.ubuntu.com/ubuntu/ precise-security/main libxml2 amd64 2.7.8.dfsg-5.1ubuntu4.1
+  404  Not Found [IP: 91.189.92.202 80]
+Err http://security.ubuntu.com/ubuntu/ precise-security/main libxml2-dev amd64 2.7.8.dfsg-5.1ubuntu4.1
+  404  Not Found [IP: 91.189.92.202 80]
+[2013-07-27T20:36:39+00:00] DEBUG: STDERR: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.7.8.dfsg-5.1ubuntu4.1_amd64.deb  404  Not Found [IP: 91.189.92.202 80]
+Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2-dev_2.7.8.dfsg-5.1ubuntu4.1_amd64.deb  404  Not Found [IP: 91.189.92.202 80]
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+[2013-07-27T20:36:39+00:00] DEBUG: ---- End output of apt-get -q -y install libxml2-dev=2.7.8.dfsg-5.1ubuntu4.1 ----
+[2013-07-27T20:36:39+00:00] DEBUG: Ran apt-get -q -y install libxml2-dev=2.7.8.dfsg-5.1ubuntu4.1 returned 100
+
+================================================================================
+Error executing action `install` on resource 'package[libxml2-dev]'
+================================================================================
+
+Chef::Exceptions::Exec
+----------------------
+apt-get -q -y install libxml2-dev=2.7.8.dfsg-5.1ubuntu4.1 returned 100, expected 0
+---- Begin output of apt-get -q -y install libxml2-dev=2.7.8.dfsg-5.1ubuntu4.1 ----
+STDOUT: Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  libxml2
+The following NEW packages will be installed:
+  libxml2-dev
+The following packages will be upgraded:
+  libxml2
+1 upgraded, 1 newly installed, 0 to remove and 64 not upgraded.
+Need to get 1,477 kB of archives.
+After this operation, 2,754 kB of additional disk space will be used.
+Err http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxml2 amd64 2.7.8.dfsg-5.1ubuntu4.1
+  404  Not Found [IP: 91.189.91.13 80]
+Err http://security.ubuntu.com/ubuntu/ precise-security/main libxml2 amd64 2.7.8.dfsg-5.1ubuntu4.1
+  404  Not Found [IP: 91.189.92.202 80]
+Err http://security.ubuntu.com/ubuntu/ precise-security/main libxml2-dev amd64 2.7.8.dfsg-5.1ubuntu4.1
+  404  Not Found [IP: 91.189.92.202 80]STDERR: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.7.8.dfsg-5.1ubuntu4.1_amd64.deb  404  Not Found [IP: 91.189.92.202 80]
+Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2-dev_2.7.8.dfsg-5.1ubuntu4.1_amd64.deb  404  Not Found [IP: 91.189.92.202 80]
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+---- End output of apt-get -q -y install libxml2-dev=2.7.8.dfsg-5.1ubuntu4.1 ----
+
+Cookbook Trace:
+---------------
+/tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/ruby.rb:174:in `install_ruby_dependencies'
+/tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/ruby.rb:171:in `each'
+/tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/ruby.rb:171:in `install_ruby_dependencies'
+/tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/ruby.rb:45:in `class_from_file'
+
+Resource Declaration:
+---------------------
+# In /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/ruby.rb
+
+171:   pkgs.each do |pkg|
+172:     package pkg do
+173:       action :nothing
+174:     end.run_action(:install)
+175:   end
+176: end
+
+Compiled Resource:
+------------------
+# Declared in /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/ruby.rb:172:in `install_ruby_dependencies'
+
+package("libxml2-dev") do
+  retry_delay 2
+  retries 0
+  action [:nothing]
+  cookbook_name :rvm
+  package_name "libxml2-dev"
+end
+
+
+================================================================================
+Error executing action `install` on resource 'rvm_ruby[2.0.0-p195]'
+================================================================================
+
+Chef::Exceptions::Exec
+----------------------
+package[libxml2-dev] (/tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/ruby.rb line 172) had an error: Chef::Exceptions::Exec: apt-get -q -y install libxml2-dev=2.7.8.dfsg-5.1ubuntu4.1 returned 100, expected 0
+---- Begin output of apt-get -q -y install libxml2-dev=2.7.8.dfsg-5.1ubuntu4.1 ----
+STDOUT: Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  libxml2
+The following NEW packages will be installed:
+  libxml2-dev
+The following packages will be upgraded:
+  libxml2
+1 upgraded, 1 newly installed, 0 to remove and 64 not upgraded.
+Need to get 1,477 kB of archives.
+After this operation, 2,754 kB of additional disk space will be used.
+Err http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxml2 amd64 2.7.8.dfsg-5.1ubuntu4.1
+  404  Not Found [IP: 91.189.91.13 80]
+Err http://security.ubuntu.com/ubuntu/ precise-security/main libxml2 amd64 2.7.8.dfsg-5.1ubuntu4.1
+  404  Not Found [IP: 91.189.92.202 80]
+Err http://security.ubuntu.com/ubuntu/ precise-security/main libxml2-dev amd64 2.7.8.dfsg-5.1ubuntu4.1
+  404  Not Found [IP: 91.189.92.202 80]STDERR: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.7.8.dfsg-5.1ubuntu4.1_amd64.deb  404  Not Found [IP: 91.189.92.202 80]
+Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2-dev_2.7.8.dfsg-5.1ubuntu4.1_amd64.deb  404  Not Found [IP: 91.189.92.202 80]
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+---- End output of apt-get -q -y install libxml2-dev=2.7.8.dfsg-5.1ubuntu4.1 ----
+
+Cookbook Trace:
+---------------
+/tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/ruby.rb:174:in `install_ruby_dependencies'
+/tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/ruby.rb:171:in `each'
+/tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/ruby.rb:171:in `install_ruby_dependencies'
+/tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/ruby.rb:45:in `class_from_file'
+
+Resource Declaration:
+---------------------
+# In /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/libraries/chef_rvm_recipe_helpers.rb
+
+175: 
+176:           rvm_ruby ruby do
+177:             patch            ruby_patch
+178:             user             opts[:user]
+179:             rubygems_version ruby_rubygems_version
+180:           end
+181:         end
+
+Compiled Resource:
+------------------
+# Declared in /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/libraries/chef_rvm_recipe_helpers.rb:176:in `install_rubies'
+
+rvm_ruby("2.0.0-p195") do
+  retry_delay 2
+  ruby_string "2.0.0-p195"
+  retries 0
+  recipe_name "system"
+  action :install
+  cookbook_name :rvm
+end
+
+[2013-07-27T20:36:39+00:00] DEBUG: Re-raising exception: Chef::Exceptions::Exec - rvm_ruby[2.0.0-p195] (rvm::system line 176) had an error: Chef::Exceptions::Exec: package[libxml2-dev] (/tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/ruby.rb line 172) had an error: Chef::Exceptions::Exec: apt-get -q -y install libxml2-dev=2.7.8.dfsg-5.1ubuntu4.1 returned 100, expected 0
+---- Begin output of apt-get -q -y install libxml2-dev=2.7.8.dfsg-5.1ubuntu4.1 ----
+STDOUT: Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  libxml2
+The following NEW packages will be installed:
+  libxml2-dev
+The following packages will be upgraded:
+  libxml2
+1 upgraded, 1 newly installed, 0 to remove and 64 not upgraded.
+Need to get 1,477 kB of archives.
+After this operation, 2,754 kB of additional disk space will be used.
+Err http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxml2 amd64 2.7.8.dfsg-5.1ubuntu4.1
+  404  Not Found [IP: 91.189.91.13 80]
+Err http://security.ubuntu.com/ubuntu/ precise-security/main libxml2 amd64 2.7.8.dfsg-5.1ubuntu4.1
+  404  Not Found [IP: 91.189.92.202 80]
+Err http://security.ubuntu.com/ubuntu/ precise-security/main libxml2-dev amd64 2.7.8.dfsg-5.1ubuntu4.1
+  404  Not Found [IP: 91.189.92.202 80]STDERR: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.7.8.dfsg-5.1ubuntu4.1_amd64.deb  404  Not Found [IP: 91.189.92.202 80]
+Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2-dev_2.7.8.dfsg-5.1ubuntu4.1_amd64.deb  404  Not Found [IP: 91.189.92.202 80]
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+---- End output of apt-get -q -y install libxml2-dev=2.7.8.dfsg-5.1ubuntu4.1 ----
+
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/mixin/command.rb:128:in `handle_command_failures'
+  /opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/mixin/command.rb:75:in `run_command'
+  /opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/mixin/command.rb:143:in `run_command_with_systems_locale'
+  /opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/provider/package/apt.rb:97:in `install_package'
+  /opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/provider/package.rb:81:in `action_install'
+  /opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/mixin/why_run.rb:63:in `call'
+  /opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/mixin/why_run.rb:63:in `converge!'
+  /opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/mixin/why_run.rb:61:in `each'
+  /opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/mixin/why_run.rb:61:in `converge!'
+  /opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/provider.rb:136:in `converge'
+  /opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/provider.rb:125:in `run_action'
+  /opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/resource.rb:593:in `run_action'
+  /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/ruby.rb:174:in `install_ruby_dependencies'
+  /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/ruby.rb:171:in `each'
+  /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/ruby.rb:171:in `install_ruby_dependencies'
+  /tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/ruby.rb:45:in `class_from_file'
+  /opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/provider.rb:207:in `instance_eval'
+  /opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/provider.rb:207:in `action_install'
+  /opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/provider.rb:123:in `send'
+  /opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/provider.rb:123:in `run_action'
+  /opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/resource.rb:593:in `run_action'
+  /opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/runner.rb:49:in `run_action'
+  /opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/runner.rb:81:in `converge'
+  /opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/runner.rb:81:in `each'
+  /opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/runner.rb:81:in `converge'
+  /opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/resource_collection.rb:94:in `execute_each_resource'
+  /opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/resource_collection/stepable_iterator.rb:116:in `call'
+  /opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/resource_collection/stepable_iterator.rb:116:in `call_iterator_block'
+  /opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/resource_collection/stepable_iterator.rb:85:in `step'
+  /opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/resource_collection/stepable_iterator.rb:104:in `iterate'
+  /opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/resource_collection/stepable_iterator.rb:55:in `each_with_index'
+  /opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/resource_collection.rb:92:in `execute_each_resource'
+  /opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/runner.rb:80:in `converge'
+  /opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/client.rb:378:in `converge'
+  /opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/client.rb:420:in `do_run'
+  /opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/client.rb:176:in `run'
+  /opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/application/solo.rb:230:in `run_application'
+  /opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/application/solo.rb:218:in `loop'
+  /opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/application/solo.rb:218:in `run_application'
+  /opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/application.rb:70:in `run'
+  /opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/chef-solo:25
+  /opt/vagrant_ruby/bin/chef-solo:19:in `load'
+  /opt/vagrant_ruby/bin/chef-solo:19
+[2013-07-27T20:36:39+00:00] ERROR: Running exception handlers
+[2013-07-27T20:36:39+00:00] ERROR: Exception handlers complete
+[2013-07-27T20:36:39+00:00] FATAL: Stacktrace dumped to /var/chef/cache/chef-stacktrace.out
+[2013-07-27T20:36:39+00:00] DEBUG: Chef::Exceptions::Exec: rvm_ruby[2.0.0-p195] (rvm::system line 176) had an error: Chef::Exceptions::Exec: package[libxml2-dev] (/tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/ruby.rb line 172) had an error: Chef::Exceptions::Exec: apt-get -q -y install libxml2-dev=2.7.8.dfsg-5.1ubuntu4.1 returned 100, expected 0
+---- Begin output of apt-get -q -y install libxml2-dev=2.7.8.dfsg-5.1ubuntu4.1 ----
+STDOUT: Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  libxml2
+The following NEW packages will be installed:
+  libxml2-dev
+The following packages will be upgraded:
+  libxml2
+1 upgraded, 1 newly installed, 0 to remove and 64 not upgraded.
+Need to get 1,477 kB of archives.
+After this operation, 2,754 kB of additional disk space will be used.
+Err http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxml2 amd64 2.7.8.dfsg-5.1ubuntu4.1
+  404  Not Found [IP: 91.189.91.13 80]
+Err http://security.ubuntu.com/ubuntu/ precise-security/main libxml2 amd64 2.7.8.dfsg-5.1ubuntu4.1
+  404  Not Found [IP: 91.189.92.202 80]
+Err http://security.ubuntu.com/ubuntu/ precise-security/main libxml2-dev amd64 2.7.8.dfsg-5.1ubuntu4.1
+  404  Not Found [IP: 91.189.92.202 80]STDERR: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.7.8.dfsg-5.1ubuntu4.1_amd64.deb  404  Not Found [IP: 91.189.92.202 80]
+Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2-dev_2.7.8.dfsg-5.1ubuntu4.1_amd64.deb  404  Not Found [IP: 91.189.92.202 80]
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+---- End output of apt-get -q -y install libxml2-dev=2.7.8.dfsg-5.1ubuntu4.1 ----
+
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/mixin/command.rb:128:in `handle_command_failures'
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/mixin/command.rb:75:in `run_command'
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/mixin/command.rb:143:in `run_command_with_systems_locale'
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/provider/package/apt.rb:97:in `install_package'
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/provider/package.rb:81:in `action_install'
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/mixin/why_run.rb:63:in `call'
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/mixin/why_run.rb:63:in `converge!'
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/mixin/why_run.rb:61:in `each'
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/mixin/why_run.rb:61:in `converge!'
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/provider.rb:136:in `converge'
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/provider.rb:125:in `run_action'
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/resource.rb:593:in `run_action'
+/tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/ruby.rb:174:in `install_ruby_dependencies'
+/tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/ruby.rb:171:in `each'
+/tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/ruby.rb:171:in `install_ruby_dependencies'
+/tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/ruby.rb:45:in `class_from_file'
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/provider.rb:207:in `instance_eval'
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/provider.rb:207:in `action_install'
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/provider.rb:123:in `send'
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/provider.rb:123:in `run_action'
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/resource.rb:593:in `run_action'
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/runner.rb:49:in `run_action'
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/runner.rb:81:in `converge'
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/runner.rb:81:in `each'
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/runner.rb:81:in `converge'
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/resource_collection.rb:94:in `execute_each_resource'
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/resource_collection/stepable_iterator.rb:116:in `call'
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/resource_collection/stepable_iterator.rb:116:in `call_iterator_block'
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/resource_collection/stepable_iterator.rb:85:in `step'
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/resource_collection/stepable_iterator.rb:104:in `iterate'
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/resource_collection/stepable_iterator.rb:55:in `each_with_index'
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/resource_collection.rb:92:in `execute_each_resource'
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/runner.rb:80:in `converge'
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/client.rb:378:in `converge'
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/client.rb:420:in `do_run'
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/client.rb:176:in `run'
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/application/solo.rb:230:in `run_application'
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/application/solo.rb:218:in `loop'
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/application/solo.rb:218:in `run_application'
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/../lib/chef/application.rb:70:in `run'
+/opt/vagrant_ruby/lib/ruby/gems/1.8/gems/chef-10.14.2/bin/chef-solo:25
+/opt/vagrant_ruby/bin/chef-solo:19:in `load'
+/opt/vagrant_ruby/bin/chef-solo:19
+[2013-07-27T20:36:39+00:00] FATAL: Chef::Exceptions::Exec: rvm_ruby[2.0.0-p195] (rvm::system line 176) had an error: Chef::Exceptions::Exec: package[libxml2-dev] (/tmp/vagrant-chef-1/chef-solo-1/cookbooks/rvm/providers/ruby.rb line 172) had an error: Chef::Exceptions::Exec: apt-get -q -y install libxml2-dev=2.7.8.dfsg-5.1ubuntu4.1 returned 100, expected 0
+---- Begin output of apt-get -q -y install libxml2-dev=2.7.8.dfsg-5.1ubuntu4.1 ----
+STDOUT: Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  libxml2
+The following NEW packages will be installed:
+  libxml2-dev
+The following packages will be upgraded:
+  libxml2
+1 upgraded, 1 newly installed, 0 to remove and 64 not upgraded.
+Need to get 1,477 kB of archives.
+After this operation, 2,754 kB of additional disk space will be used.
+Err http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxml2 amd64 2.7.8.dfsg-5.1ubuntu4.1
+  404  Not Found [IP: 91.189.91.13 80]
+Err http://security.ubuntu.com/ubuntu/ precise-security/main libxml2 amd64 2.7.8.dfsg-5.1ubuntu4.1
+  404  Not Found [IP: 91.189.92.202 80]
+Err http://security.ubuntu.com/ubuntu/ precise-security/main libxml2-dev amd64 2.7.8.dfsg-5.1ubuntu4.1
+  404  Not Found [IP: 91.189.92.202 80]STDERR: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.7.8.dfsg-5.1ubuntu4.1_amd64.deb  404  Not Found [IP: 91.189.92.202 80]
+Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2-dev_2.7.8.dfsg-5.1ubuntu4.1_amd64.deb  404  Not Found [IP: 91.189.92.202 80]
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+---- End output of apt-get -q -y install libxml2-dev=2.7.8.dfsg-5.1ubuntu4.1 ----
+

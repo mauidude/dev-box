@@ -1,0 +1,22 @@
+{
+	"rvm": {
+	    "rubies": ["2.0.0-p195"],
+	    "default_ruby": "2.0.0-p195",
+	    "vagrant": { "system_chef_solo" : "/opt/ruby/bin/chef-solo" },
+	    "gems": {
+	      "2.0.0-p195": [
+	        {"name": "bundler"},
+	        {"name": "rake"},
+	        {"name": "rails", "version": "4.0.0" }
+	      ]
+	    }
+	},
+
+    "run_list" : [
+    	"recipe[apt::default]",
+    	"recipe[git]",
+    	"recipe[curl]",
+    	"recipe[rvm::system]",
+    	"recipe[rvm::vagrant]"
+    ]
+}
