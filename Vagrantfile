@@ -55,7 +55,7 @@ Vagrant::Config.run do |config|
     #chef.roles_path = ROLES_PATH
     #chef.data_bags_path = DATA_BAGS_PATH
     chef.json = node
-    chef.log_level = :debug
+    #chef.log_level = :debug
 
     node['run_list'].each do |recipe|
       chef.add_recipe(recipe)
