@@ -2,7 +2,7 @@
   "rvm": {
     "rubies": ["2.0.0-p195"],
     "default_ruby": "2.0.0-p195",
-    "vagrant": { "system_chef_solo" : "/opt/ruby/bin/chef-solo" },
+    "vagrant": { "system_chef_solo" : "/opt/vagrant_ruby/bin/chef-solo" },
     "gems": {
       "2.0.0-p195": [
         {"name": "bundler"},
