@@ -37,6 +37,9 @@
   	"recipe[build-essential]",
   	"recipe[postgresql::server]",
     "recipe[vim]",
+    "recipe[xvfb]",
+    "recipe[google-chrome]",
+    "recipe[firefox]",
     "recipe[java]",
     "recipe[elasticsearch]"
   ]
