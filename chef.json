@@ -18,6 +18,16 @@
     }
   },
 
+  "java": {
+    "install_flavor": "openjdk",
+    "jdk_version": "7"
+  },
+
+  "elasticsearch": {
+    "cluster_name" : "elasticsearch_test_chef",
+    "bootstrap.mlockall" : false
+  },
+
   "run_list" : [
   	"recipe[apt::default]",
   	"recipe[git]",
@@ -26,6 +36,8 @@
   	"recipe[rvm::vagrant]",
   	"recipe[build-essential]",
   	"recipe[postgresql::server]",
-    "recipe[vim]"
+    "recipe[vim]",
+    "recipe[java]",
+    "recipe[elasticsearch]"
   ]
 }
