@@ -10,4 +10,4 @@ include_recipe "xvfb"
 include_recipe "google-chrome"
 
 include_recipe "elasticsearch"
-include_recipe "qt"
+include_recipe "development::qt"
