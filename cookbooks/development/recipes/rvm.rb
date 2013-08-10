@@ -23,3 +23,14 @@ rvm_shell "install other required dependencies" do
   group       app_user_config
   code        "gem install rake bundler"
 end
+
+rvm_shell "install zeus" do
+  ruby_string app_ruby_config
+  user        app_user_config
+  group       app_user_config
+  code        "gem install zeus -v 0.13.4.pre2"
+end
+
+env "ZEUSSOCK" do
+  value "/tmp/zeus.sock"
+end
