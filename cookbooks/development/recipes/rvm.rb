@@ -31,6 +31,4 @@ rvm_shell "install zeus" do
   code        "gem install zeus -v 0.13.4.pre2"
 end
 
-env "ZEUSSOCK" do
-  value "/tmp/zeus.sock"
-end
+ENV['ZEUSSOCK'] = "/tmp/zeus.sock"
