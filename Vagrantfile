@@ -21,6 +21,7 @@ Vagrant.configure("2") do |config|
   config.vm.box_url = "http://files.vagrantup.com/precise64.box"
 
   config.ssh.forward_agent = true
+  config.berkshelf.enabled = true
 
   # Boot with a GUI so you can see the screen. (Default is headless)
   # config.vm.boot_mode = :gui
@@ -53,15 +54,15 @@ Vagrant.configure("2") do |config|
   node = JSON.parse(IO.read(CHEF_JSON_PATH)) if File.exists?(CHEF_JSON_PATH)
 
   config.vm.provision :chef_solo do |chef|
-    chef.cookbooks_path = COOKBOOKS_PATH 
-    #chef.roles_path = ROLES_PATH
-    #chef.data_bags_path = DATA_BAGS_PATH
-    chef.json = node
-    #chef.log_level = :debug
+    chef.cookbooks_path = COOKBOOKS_PATH
+    chef.log_level = :debug
 
-    node['run_list'].each do |recipe|
-      chef.add_recipe(recipe)
-    end if node['run_list']
+    chef.json = {
+      :development => {
+      }
+    }
+
+    # install the following recipies
+    chef.run_list = [ "recipe[development]" ]
   end
-
 end
